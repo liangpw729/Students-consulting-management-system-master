@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ecedf1"
+    android:orientation="vertical">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_head"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        fresco:backgroundImage="@mipmap/ico_add_user"
+        fresco:roundAsCircle="true"
+        fresco:roundingBorderColor="#FF000000"
+        fresco:roundingBorderWidth="1dp" />
+
+    <EditText
+        android:id="@+id/et_real_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_round_white"
+        android:drawableLeft="@mipmap/ico_name"
+        android:drawablePadding="15dp"
+        android:hint="请输入你的真实姓名"
+        android:paddingLeft="15dp"
+        android:textColor="#FF000000"
+        android:textColorHint="#FF999999"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_sex"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_round_white"
+        android:drawableLeft="@mipmap/ico_sex"
+        android:drawablePadding="15dp"
+        android:gravity="center_vertical"
+        android:hint="请输入你的性别"
+        android:paddingLeft="15dp"
+        android:textColor="#FF000000"
+        android:textColorHint="#FF999999"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/et_no"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_round_white"
+        android:drawableLeft="@mipmap/ico_no"
+        android:drawablePadding="15dp"
+        android:hint="请输入你的学号"
+        android:paddingLeft="15dp"
+        android:textColor="#FF000000"
+        android:textColorHint="#FF999999"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/et_mail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_round_white"
+        android:drawableLeft="@mipmap/ico_mail"
+        android:drawablePadding="15dp"
+        android:hint="请输入你有效的邮箱地址"
+        android:paddingLeft="15dp"
+        android:textColor="#FF000000"
+        android:textColorHint="#FF999999"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bg_btn_blue"
+        android:enabled="false"
+        android:text="提交"
+        android:textColor="#FFFFFFFF"
+        android:textSize="20sp" />
+</LinearLayout>

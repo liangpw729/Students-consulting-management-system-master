@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66000000"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/mask"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFFFF"
+        android:gravity="center"
+        android:text="选择性别"
+        android:textColor="#FF666666"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#FFCCCCCC" />
+
+    <TextView
+        android:id="@+id/btn_one"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFFFF"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="男"
+        android:textColor="#666"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#FFCCCCCC" />
+
+    <TextView
+        android:id="@+id/btn_two"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="女"
+        android:background="#FFFFFFFF"
+        android:textColor="#666"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5.67dp"
+        android:background="#e6e5ed" />
+
+    <TextView
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="取消"
+        android:background="#FFFFFFFF"
+        android:textColor="#232232"
+        android:textSize="15sp" />
+
+</LinearLayout>

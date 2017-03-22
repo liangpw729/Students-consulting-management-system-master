@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#33b5e5"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/iv_bg"
+            android:padding="10dp"
+            android:src="@drawable/back" />
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/editext_bg"
+            android:hint="输入你想搜索的内容"
+            android:paddingLeft="5dp"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/iv_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/search" />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_class"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rtbn_topic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_selector_topic_expert"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="话题"
+            android:textColor="@drawable/radio_selector_tv_color"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rtbn_expert"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_selector_topic_expert"
+            android:button="@null"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="专家"
+            android:textColor="@drawable/radio_selector_tv_color"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ecedf1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_settitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#33b5e5"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/iv_bg"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="设置"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="match_parent"></View>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_new"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/item_selector_bg"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="新消息提醒"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_model"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/item_selector_bg"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="勿扰模式"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_textsize"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/item_selector_bg"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="字体大小"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_help"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/item_selector_bg"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="使用反馈与帮助"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_exit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/item_selector_bg"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="退出"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <SlidingDrawer
+        android:id="@+id/sd_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:allowSingleTap="false"
+        android:content="@+id/content"
+        android:handle="@+id/iv_handle"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@id/iv_handle"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ecedf1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/arrow_down" />
+
+            <LinearLayout
+                android:id="@+id/ll_new_warn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:visibility="gone">
+
+                <include layout="@layout/new_warn" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_model"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <include layout="@layout/model" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_help"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <include layout="@layout/help" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_exit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <include layout="@layout/exit" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </SlidingDrawer>
+</LinearLayout>
